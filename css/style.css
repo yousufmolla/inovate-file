@@ -1,0 +1,271 @@
+/* All Common CSS Start  */
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+    line-height: 0.8;
+}
+
+body {
+    background: url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* All Common CSS End */
+
+/* Header Part Start  */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    font-size: 18px;
+    color: rgb(16, 16, 16);
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    padding: 0 10px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link i {
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.contact_btn a {
+    padding: 20px 30px;
+    background: #9064F5;
+    border-radius: 15px;
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+}
+
+/* Header Part End  */
+
+/* Banner Part Start  */
+#banner_part {
+    padding-top: 215px;
+    padding-bottom: 70px;
+    background: url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.banner_text h1 {
+    font-size: 64px;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+    color: #29313D;
+    text-transform: capitalize;
+    line-height: 70px;
+    padding-top: 110px;
+    padding-bottom: 25px;
+
+}
+
+.banner_text p {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Nunito", sans-serif;
+    color: #29313D;
+    text-transform: capitalize;
+    line-height: 30px;
+    padding-right: 202px;
+    border-left: 6px solid #FFC556;
+    padding-left: 10px;
+}
+
+.banner_signup input {
+    width: 80%;
+    padding: 25px 20px;
+    background: rgba(132, 84, 245, 0.2);
+    border: none;
+    border-radius: 10px;
+}
+
+.banner_signup input::placeholder {
+    color: #29313D;
+    opacity: 1;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Nunito", sans-serif;
+}
+
+.banner_signup {
+    position: relative;
+}
+
+.banner_signup a {
+    padding: 15px 35px;
+    background: #9064F5;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Nunito", sans-serif;
+    position: absolute;
+    right: 185px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Banner Part End */
+
+
+
+/* Client Part Start */
+#client_part {
+    padding: 125px 0;
+}
+
+/* Client Part End */
+
+
+/* Features Part Start */
+#features_part {
+    padding: 100px 0;
+}
+
+.features_left h3 {
+    font-size: 56px;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+    color: #29313D;
+    text-transform: capitalize;
+    line-height: 70px;
+    padding-right: 52px;
+}
+
+.features_p p {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Nunito", sans-serif;
+    color: #29313D;
+    text-transform: capitalize;
+    line-height: 30px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.features_p p::after {
+    position: absolute;
+    height: 110px;
+    width: 6px;
+    background: #FFC556;
+    content: "";
+    left: 0;
+    bottom: 0;
+}
+
+.icon_with_heading {
+    display: flex;
+    padding-bottom: 10px;
+}
+
+.box {
+    height: 70px;
+    background: rgba(254, 196, 95, 0.15);
+    width: 70px;
+    position: relative;
+    border-radius: 14px;
+    margin-right: 25px;
+     transition: .4s;
+
+}
+
+.icon_with_heading i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 30px;
+    color: #FEC35F;
+     transition: .4s;
+
+}
+.icon_with_heading h3{
+    font-size: 28px;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+    color: #29313D;
+    text-transform: capitalize;
+    margin-top: 20px;
+     transition: .4s;
+}
+.features_item{
+    padding: 25px;
+    border: 1px solid rgba(132, 84, 245, 0.4);
+    border-radius: 14px;
+    transition: .4s;
+}
+.features_item p{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Nunito", sans-serif;
+    color: #29313D;
+    text-transform: capitalize;
+    line-height: 24px;
+     transition: .4s;
+}
+.features_item:hover{
+    background: #9064F5;
+}
+.features_item:hover .icon_with_heading .box{
+    background: rgba(252, 252, 254, 0.15);
+}
+.features_item:hover .icon_with_heading .box i{
+   color: #fff;
+}
+.features_item:hover .icon_with_heading h3{
+   color: #fff;
+}
+.features_item:hover p{
+   color: #fff;
+}
+.features_item:hover a{
+   color: #fff;
+}
+/* Features Part End */
+
+/* Client Part Start */
+/* Client Part End */
+/* Client Part Start */
+/* Client Part End */
+/* Client Part Start */
+/* Client Part End */
+/* Client Part Start */
+/* Client Part End */
+/* Client Part Start */
+/* Client Part End */
+/* Client Part Start */
+/* Client Part End */
+/* Client Part Start */
+/* Client Part End */
